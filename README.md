@@ -1,2 +1,0 @@
-# ScreenMatch
-Aplicação em Java
