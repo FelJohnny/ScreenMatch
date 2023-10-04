@@ -1,11 +1,11 @@
 public class Filme {
     String nome;
     int anoDeLancamento;
-    int duracaoEmMinutos;;
+    int duracaoEmMinutos;
     boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-
-    int totalDeAvaliacoes;
+    private double somaDasAvaliacoes;
+    private int totalDeAvaliacoes;
+    private double pegaMedia;
 
     public void exibeFixaTecnica(){
         System.out.printf("""
@@ -21,8 +21,11 @@ public class Filme {
         totalDeAvaliacoes++;
     }
 
-    public double pegaMedia(){
-        return somaDasAvaliacoes / totalDeAvaliacoes;
+    public double getPegaMedia(){
+        return pegaMedia = somaDasAvaliacoes / totalDeAvaliacoes;
+    }
 
+    public int getTotalDeAvaliacoes(){
+        return totalDeAvaliacoes;
     }
 }
