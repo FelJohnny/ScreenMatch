@@ -10,7 +10,8 @@ public class Principal {
         filme1.exibeFixaTecnica();
         filme1.avalia(10);
         filme1.avalia(5);
-        System.out.println("A media das avaliações são: " + filme1.getPegaMedia());
+        System.out.println("A media das avaliações são: " + filme1.PegaMedia());
         System.out.println("total de avaliações: " + filme1.getTotalDeAvaliacoes());
+
     }
 }

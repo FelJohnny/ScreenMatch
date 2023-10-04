@@ -5,7 +5,7 @@ public class Filme {
     boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
-    private double pegaMedia;
+
 
     public void exibeFixaTecnica(){
         System.out.printf("""
@@ -21,8 +21,8 @@ public class Filme {
         totalDeAvaliacoes++;
     }
 
-    public double getPegaMedia(){
-        return pegaMedia = somaDasAvaliacoes / totalDeAvaliacoes;
+    public double PegaMedia(){
+        return  somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
     public int getTotalDeAvaliacoes(){
