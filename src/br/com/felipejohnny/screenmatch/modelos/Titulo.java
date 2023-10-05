@@ -13,6 +13,8 @@ public class Titulo {
         this.nome = nome;
     }
 
+
+
     public void setAnoDeLancamento(int AnoDeLancamento){
         this.anoDeLancamento = AnoDeLancamento;;
     }
@@ -35,7 +37,7 @@ public class Titulo {
     }
 
     public int getDuracaoEmMinutos() {
-        return duracaoEmMinutos;
+        return this.duracaoEmMinutos;
     }
 
     public boolean isIncluidoNoPlano() {
@@ -56,9 +58,10 @@ public class Titulo {
                 Duração em minutos: %d
                 incluido no Plano: %b
                 *********************************************
-                """,nome,anoDeLancamento,duracaoEmMinutos, incluidoNoPlano);
+                """,nome,anoDeLancamento, duracaoEmMinutos , incluidoNoPlano);
 
     }
+
 
     public void avalia (double nota){
         somaDasAvaliacoes += nota;

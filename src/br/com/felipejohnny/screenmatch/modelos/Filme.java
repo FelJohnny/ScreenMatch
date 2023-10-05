@@ -4,7 +4,7 @@ public class Filme extends Titulo{
     private String diretor;
 
     public String getDiretor() {
-        return diretor;
+        return this.diretor;
     }
 
     public void setDiretor(String diretor) {

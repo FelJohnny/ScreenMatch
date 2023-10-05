@@ -1,6 +1,7 @@
 import br.com.felipejohnny.screenmatch.modelos.Filme;
 import br.com.felipejohnny.screenmatch.modelos.Serie;
 
+
 public class Principal {
     public static void main(String[] args) {
         Filme filme1 = new Filme();
@@ -21,12 +22,18 @@ public class Principal {
 
         Serie serie = new Serie();
 
+
         serie.setNome("One Piece");
         serie.setAnoDeLancamento(2023);
         serie.exibeFixaTecnica();
-        serie.setTemporadas(1);
-        serie.setEpisodiosPorTemporadas(12);
-        serie.setMinutosPorEpisodio(110);
+        serie.setAnoDeLancamento(2017);
+        serie.setIncluidoNoPlano(true);
+        serie.setAtiva(true);
+        serie.setTemporadas(2);
+        serie.setEpisodiosPorTemporadas(10);
+        serie.setMinutosPorEpisodio(100);
+        System.out.println();
+
 
 
     }
