@@ -1,6 +1,6 @@
 package br.com.felipejohnny.screenmatch.modelos;
 
-public class Serie extends Titulo {
+public class Serie extends Titulo{
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporadas;
@@ -40,6 +40,6 @@ public class Serie extends Titulo {
 
     @Override
     public int getDuracaoEmMinutos() {
-        return temporadas * episodiosPorTemporadas * minutosPorEpisodio;
+        return this.temporadas * this.episodiosPorTemporadas * this.minutosPorEpisodio;
     }
 }

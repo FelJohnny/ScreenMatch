@@ -8,40 +8,35 @@ public class Titulo {
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
 
-    //----------------------------SET-----------------------------------//
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-
-
-    public void setAnoDeLancamento(int AnoDeLancamento){
-        this.anoDeLancamento = AnoDeLancamento;;
-    }
-
-    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
-        this.duracaoEmMinutos = duracaoEmMinutos;
-    }
-
-    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
-    }
-    //----------------------------GET-----------------------------------//
-
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
 
+    public void setAnoDeLancamento(int AnoDeLancamento){
+        this.anoDeLancamento = AnoDeLancamento;;
+    }
+
     public int getDuracaoEmMinutos() {
         return this.duracaoEmMinutos;
     }
 
-    public boolean isIncluidoNoPlano() {
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public boolean getIncluidoNoPlano() {
         return incluidoNoPlano;
+    }
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
     }
 
     public double getSomaDasAvaliacoes() {
@@ -51,17 +46,14 @@ public class Titulo {
     //----------------------------metodos-----------------------------------//
 
     public void exibeFixaTecnica(){
-        System.out.printf("""
-                *********************************************
-                Nome: %s
-                Ano de Lançamento: %d
-                Duração em minutos: %d
-                incluido no Plano: %b
-                *********************************************
-                """,nome,anoDeLancamento, duracaoEmMinutos , incluidoNoPlano);
+        System.out.printf("*********************************************\n");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Ano de Lançamento: " + getAnoDeLancamento());
+        System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
+        System.out.println(" incluido no Plano: " + getIncluidoNoPlano());
+        System.out.printf("*********************************************\n");
 
     }
-
 
     public void avalia (double nota){
         somaDasAvaliacoes += nota;

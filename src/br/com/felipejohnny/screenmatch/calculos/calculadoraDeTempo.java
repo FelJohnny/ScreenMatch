@@ -1,5 +1,4 @@
 package br.com.felipejohnny.screenmatch.calculos;
-
 import br.com.felipejohnny.screenmatch.modelos.Titulo;
 
 public class calculadoraDeTempo {
