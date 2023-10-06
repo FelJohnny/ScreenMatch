@@ -1,6 +1,8 @@
 package br.com.felipejohnny.screenmatch.modelos;
 
-public class Serie extends Titulo{
+import br.com.felipejohnny.screenmatch.calculos.Classificavel;
+
+public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporadas;
@@ -42,4 +44,5 @@ public class Serie extends Titulo{
     public int getDuracaoEmMinutos() {
         return this.temporadas * this.episodiosPorTemporadas * this.minutosPorEpisodio;
     }
+
 }
